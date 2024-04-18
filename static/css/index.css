@@ -141,6 +141,8 @@ body {
 }
 
 .video {
+  width: 500px;
+  height: 350px;
   text-align: center;
   margin: 0 10px;
 }
@@ -148,6 +150,7 @@ body {
 video {
   width: 100%; /* 或者您希望的固定宽度 */
   height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 

@@ -53,8 +53,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Flow-Audio-Synth</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <!-- <div class="is-size-5 publication-authors">
+         
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
               <span class="author-block">
@@ -62,17 +62,17 @@
               <span class="author-block">
                 <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
               </span>
-            </div>
+            </div> -->
 
-            <div class="is-size-5 publication-authors">
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">Institution Name<br>Conferance name and year</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div>
+            </div> -->
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- Arxiv PDF link -->
-                <span class="link-block">
+
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -80,10 +80,10 @@
                     </span>
                     <span>Paper</span>
                   </a>
-                </span>
+                </span> -->
 
-                <!-- Supplementary PDF link -->
-                <span class="link-block">
+
+                <!-- <span class="link-block">
                   <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -91,18 +91,18 @@
                     </span>
                     <span>Supplementary</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- Github link -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <span class="link-block">
+                  <a href="https://github.com/luzixiang2019/video2audio" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span> -->
+                </span>
 
                 <!-- ArXiv abstract Link -->
                 <!-- <span class="link-block">
@@ -122,8 +122,28 @@
     </div>
   </section>
 
-
-  <!-- Teaser video-->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3" style="text-align: center;">Abstract</h2>
+        <p style="font-size: 24px;">  With the rapid development of cross-modal generative models, video-to-audio generation has become a novel endeavor. Some previous papers process the video as a whole, which loses dynamic features
+          and results in coarse-grained generation while others use autoregressive
+          models that utilize each frame of the video to generate the corresponding audio, and then splice the audio segments together to form a single
+          whole, which is inefficient and generates audio that may be discontinuous. In our work, we propose Flow-Audio-Synth, a model designed for
+          latent space video-guided audio generation. We construct the robust and
+          efficient model by: 1) combining the powerful CLIP image encoder
+          with an optical flow algorithm, focusing on both the rich static semantics
+          and dynamic features of videos to facilitate the generation of higher fidelity, fine-grained audio; 2) using slow and fast channels to capture both
+          overall scene changes and dynamic features over localized time periods
+          of videos; 3) utilizing mel-spectrograms for audio generation rather than
+          complex waveforms, enhancing the efficiency and accuracy of the model.
+          Evaluation results show that Flow-Audio-Synth outperforms state-ofthe-art(SOTA) methods in terms of both correlation and fidelity. Moreover, the ablation experiment shows that the optical flow algorithm and
+          the fast and slow channels bring improvements to the model.
+          </p>
+      </div>
+    </div>
+  </section>
+      <!-- Teaser video-->
   <!-- <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
@@ -225,12 +245,12 @@
   </section> -->
   <!-- End youtube video -->
   <!-- Video carousel -->
-  <section class="hero is-small">
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3">LandScape</h2>
         <p>Listen each audio clip carefully and rate their sound quality </p>
-        <div class="audios-container">
+        <!-- <div class="audios-container">
 
           <div class="audio">
             <audio controls>
@@ -379,8 +399,161 @@
             </audio>
 
           </div>
+        </div> -->
+
+
+
+  <!-- <div class="audios-container">
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/GT/00wUFSUwRg373383.wav" type="audio/wav">
+            </audio>
+            <p>GT</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/Ours/00wUFSUwRg373383.wav" type="audio/wav">
+            </audio>
+            <p>Ours</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/MM-Diffusion/00wUFSUwRg373383.wav" type="audio/wav">
+            </audio>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/IM2WAV/00wUFSUwRg373383.wav" type="audio/wav">
+            </audio>
+            <p>IM2WAV</p>
+          </div>
         </div>
-        <!-- <div class="audios-container">
+        <div class="audios-container">
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/GT/0qEOlwW3MjU2737027380.wav" type="audio/wav">
+            </audio>
+            <p>GT</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/Ours/0qEOlwW3MjU2737027380.wav" type="audio/wav">
+            </audio>
+            <p>Ours</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/MM-Diffusion/0qEOlwW3MjU2737027380.wav" type="audio/wav">
+            </audio>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/IM2WAV/0qEOlwW3MjU2737027380.wav" type="audio/wav">
+            </audio>
+            <p>IM2WAV</p>
+          </div>
+        </div>
+        <div class="audios-container">
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/GT/2dkilldNRJE37173727.wav" type="audio/wav">
+            </audio>
+            <p>GT</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/Ours/2dkilldNRJE37173727.wav" type="audio/wav">
+            </audio>
+            <p>Ours</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/MM-Diffusion/2dkilldNRJE37173727.wav" type="audio/wav">
+            </audio>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/IM2WAV/2dkilldNRJE37173727.wav" type="audio/wav">
+            </audio>
+            <p>IM2WAV</p>
+          </div>
+        </div>
+        <div class="audios-container">
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/GT/3y3TXbkX_8k19881998.wav" type="audio/wav">
+            </audio>
+            <p>GT</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/Ours/3y3TXbkX_8k19881998.wav" type="audio/wav">
+            </audio>
+            <p>Ours</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/MM-Diffusion/3y3TXbkX_8k19881998.wav" type="audio/wav">
+            </audio>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/IM2WAV/3y3TXbkX_8k19881998.wav" type="audio/wav">
+            </audio>
+            <p>IM2WAV</p>
+          </div>
+        </div>
+        <div class="audios-container">
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/GT/5qnD8Th48g532542.wav" type="audio/wav">
+            </audio>
+            <p>GT</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/Ours/5qnD8Th48g532542.wav" type="audio/wav">
+            </audio>
+            <p>Ours</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/MM-Diffusion/5qnD8Th48g532542.wav" type="audio/wav">
+            </audio>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="audio">
+            <audio controls>
+              <source src="static/audios/IM2WAV/5qnD8Th48g532542.wav" type="audio/wav">
+            </audio>
+            <p>IM2WAV</p>
+          </div>
+        </div> -->
+  <!-- <div class="audios-container">
 
           <div class="audio">
             <audio controls>
@@ -829,633 +1002,324 @@
             </audio>
 
           </div>
-        </div> -->
+        </div> 
 
       </div>
     </div>
-  </section>
+  </section>-->
   <!-- End video carousel -->
 
   <!-- Video carousel -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">LandScape</h2>
-        <p>Watch each video carefully and rate them in terms of how relevantly the sound matches the visual content</p>
+        <h2 class="title is-3" style="text-align: center;">Video-to-Audio Generation</h2>
+        <h3 class="title is-4">Comparison with Prior Works</h3>
 
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/GT/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
             </video>
-
+            <p>GT</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Ours/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
             </video>
-
+            <p>Ours</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/MM-Diffusion/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
             </video>
-
+            <p>MM-Diffusion</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/IM2WAV/0qEOlwW3MjU2737027380.mp4" type="video/mp4">
             </video>
-
+            <p>IM2WAV</p>
           </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/0W1h05JCqTw796806.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/GT/0W1h05JCqTw796806.mp4" type="video/mp4">
             </video>
-
+            <p>GT</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/0W1h05JCqTw796806.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Ours/0W1h05JCqTw796806.mp4" type="video/mp4">
             </video>
-
+            <p>Ours</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/0W1h05JCqTw796806.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/MM-Diffusion/0W1h05JCqTw796806.mp4" type="video/mp4">
             </video>
-
+            <p>MM-Diffusion</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/0W1h05JCqTw796806.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/IM2WAV/0W1h05JCqTw796806.mp4" type="video/mp4">
             </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/3eMsOo3Nbfg92102.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/3eMsOo3Nbfg92102.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/3eMsOo3Nbfg92102.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/3eMsOo3Nbfg92102.mp4" type="video/mp4">
-            </video>
-
+            <p>IM2WAV</p>
           </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/5qnD8Th48g532542.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/GT/3eMsOo3Nbfg92102.mp4" type="video/mp4">
             </video>
-
+            <p>GT</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/5qnD8Th48g532542.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Ours/3eMsOo3Nbfg92102.mp4" type="video/mp4">
             </video>
-
+            <p>Ours</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/5qnD8Th48g532542.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/MM-Diffusion/3eMsOo3Nbfg92102.mp4" type="video/mp4">
             </video>
-
+            <p>MM-Diffusion</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/5qnD8Th48g532542.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/IM2WAV/3eMsOo3Nbfg92102.mp4" type="video/mp4">
             </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/6sZz43jz8w810291039.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/6sZz43jz8w810291039.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/6sZz43jz8w810291039.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/6sZz43jz8w810291039.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <!-- <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/74_vdVpDN7M3949.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/74_vdVpDN7M3949.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/74_vdVpDN7M3949.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/74_vdVpDN7M3949.mp4" type="video/mp4">
-            </video>
-
+            <p>IM2WAV</p>
           </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/8gORgKNAJAc1828.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/GT/5qnD8Th48g532542.mp4" type="video/mp4">
             </video>
-
+            <p>GT</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/8gORgKNAJAc1828.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Ours/5qnD8Th48g532542.mp4" type="video/mp4">
             </video>
-
+            <p>Ours</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/8gORgKNAJAc1828.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/MM-Diffusion/5qnD8Th48g532542.mp4" type="video/mp4">
             </video>
-
+            <p>MM-Diffusion</p>
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/8gORgKNAJAc1828.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/IM2WAV/5qnD8Th48g532542.mp4" type="video/mp4">
             </video>
-
+            <p>IM2WAV</p>
           </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/8ZK9NHwpi7I2617726187.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/GT/6sZz43jz8w810291039.mp4" type="video/mp4">
+            </video>
+            <p>GT</p>
+          </div>
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/Ours/6sZz43jz8w810291039.mp4" type="video/mp4">
+            </video>
+            <p>Ours</p>
+          </div>
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/MM-Diffusion/6sZz43jz8w810291039.mp4" type="video/mp4">
+            </video>
+            <p>MM-Diffusion</p>
+          </div>
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/IM2WAV/6sZz43jz8w810291039.mp4" type="video/mp4">
+            </video>
+            <p>IM2WAV</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+  <!-- End video carousel -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <p></p>
+        <h3 class="title is-4">Examples</h3>
+
+
+
+
+
+        <div class="videos-container">
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/Our_VGG/0jDld11jhw_000093.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/8ZK9NHwpi7I2617726187.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/0K92tp4GEk_000108.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/8ZK9NHwpi7I2617726187.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/0nYltlo90Zc_000161.mp4" type="video/mp4">
             </video>
 
           </div>
 
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/8ZK9NHwpi7I2617726187.mp4" type="video/mp4">
-            </video>
 
-          </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/ahehy5_sFk11311141.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/0ut4if4B6zM_000056.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/ahehy5_sFk11311141.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/3HgbEKrbA9s_000054.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/ahehy5_sFk11311141.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/5iwbk0HAdNc_000000.mp4" type="video/mp4">
             </video>
 
           </div>
 
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/ahehy5_sFk11311141.mp4" type="video/mp4">
-            </video>
 
-          </div>
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/bSbbWxn0uE3354033550.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/5YfCTKbsuHQ_000030.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/bSbbWxn0uE3354033550.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/6ASz7Pg5Hhw_000304.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/bSbbWxn0uE3354033550.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/AAyqgdDOUYA_000020.mp4" type="video/mp4">
+            </video>
+
+          </div>
+
+
+        </div>
+
+        <div class="videos-container">
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/Our_VGG/IlDRFxrDWw8_000090.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/bSbbWxn0uE3354033550.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/mFZRSbjdhNg_000001.mp4" type="video/mp4">
             </video>
 
           </div>
+
+          <div class="video">
+            <video controls>
+              <source src="static/videos/Our_VGG/N4SfahxM8Z4_000004.mp4" type="video/mp4">
+            </video>
+
+          </div>
+
+
         </div>
         <div class="videos-container">
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/Bzdd9UoSevY800810.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/nwORnZ_cvMY_000010.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/Bzdd9UoSevY800810.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/piyECZa_kX8_000357.mp4" type="video/mp4">
             </video>
 
           </div>
 
           <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/Bzdd9UoSevY800810.mp4" type="video/mp4">
+            <video controls>
+              <source src="static/videos/Our_VGG/qVTw_uOFmZQ_000005.mp4" type="video/mp4">
             </video>
 
           </div>
 
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/Bzdd9UoSevY800810.mp4" type="video/mp4">
-            </video>
 
-          </div>
         </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/CI0jX5TMs0Q457467.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/CI0jX5TMs0Q457467.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/CI0jX5TMs0Q457467.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/CI0jX5TMs0Q457467.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/d63_HiUdKj023252335.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/d63_HiUdKj023252335.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/d63_HiUdKj023252335.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/d63_HiUdKj023252335.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/Fb7ybBHo2oY183193.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/Fb7ybBHo2oY183193.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/Fb7ybBHo2oY183193.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/Fb7ybBHo2oY183193.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/jGcNHeHcEI34803490.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/jGcNHeHcEI34803490.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/jGcNHeHcEI34803490.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/jGcNHeHcEI34803490.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/k9XhLmcwG_025512561.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/k9XhLmcwG_025512561.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/k9XhLmcwG_025512561.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/k9XhLmcwG_025512561.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/qTNTZ8CVAX42722427234.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/qTNTZ8CVAX42722427234.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/qTNTZ8CVAX42722427234.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/qTNTZ8CVAX42722427234.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/TxRbeh_YEDY21352145.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/TxRbeh_YEDY21352145.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/TxRbeh_YEDY21352145.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/TxRbeh_YEDY21352145.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/W0bk_17JKSk3275532765.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/W0bk_17JKSk3275532765.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/W0bk_17JKSk3275532765.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/W0bk_17JKSk3275532765.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div>
-        <div class="videos-container">
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/gt/ybnLiuOk7k8393403.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/ours/ybnLiuOk7k8393403.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/mm/ybnLiuOk7k8393403.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          <div class="video">
-            <video controls muted loop>
-              <source src="static/videos/im2wav/ybnLiuOk7k8393403.mp4" type="video/mp4">
-            </video>
-
-          </div>
-        </div> -->
 
       </div>
     </div>
   </section>
-  <!-- End video carousel -->
-
-
-
-
 
 
   <!-- Paper poster -->
-  <section class="hero is-small is-light">
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Poster</h2>
@@ -1465,21 +1329,21 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
   <!--End paper poster -->
 
 
   <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-  </section>
+  </section> -->
   <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
@@ -1499,7 +1363,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Statcounter tracking code -->
 
